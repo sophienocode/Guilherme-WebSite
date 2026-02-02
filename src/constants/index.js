@@ -1,5 +1,6 @@
 
 
+
 const navLinks = [
   {
     name: "Work",
@@ -36,95 +37,87 @@ const words = [
 const techStackIcons = [
   {
     name: "React Js",
+    subtitle: "Basic Level",
     modelPath: "/models/react_logo-transformed.glb",
-    subtitle: "Basic Knowledge",
     scale: 1,
     rotation: [0, 0, 0],
   },
-  {
-    name: "HTML5",
-    modelPath: "",
-    scale: 0.8,
+   {
+    name: "Three Js",
+    subtitle: "Basic Level",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.04,
     rotation: [0, 0, 0],
   },
-  {
-    name: "CSS3",
-    modelPath: "",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "jQuery",
-    modelPath: "",
-    scale: 0.05,
-    rotation: [0, 0, 0],
-  },
+ 
   {
     name: "Node Js",
-    modelPath: "",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
-  },
-  {
-    name: "SQL",
-    modelPath: "",
-    scale: 1,
+    subtitle: "Basic Level",
+    modelPath: "/models/node.js.glb",
+    scale: 35,
     rotation: [0, 0, 0],
   },
+
+
   {
-    name: "PostgreSQL ",
-    modelPath: "",
-    scale: 1,
+    name: "MongoDB",
+    subtitle: "Learning ",
+    modelPath: "/models/mongodb.glb",
+    scale: 50,
     rotation: [0, 0, 0],
   },
+
+ 
   {
-    name: "Next Js ",
-    modelPath: "",
-    scale: 1,
+    name: "Java Script",
+    subtitle: "Intermediate Level",
+    modelPath: "/models/javascript.glb",
+    scale: 35,
+    rotation: [0, 0, 0],
+    position: [0, -2, 0],
+  },
+
+
+  {
+    name: "HTML5",
+    subtitle: "Advanced Level",
+    modelPath: "/models/html.glb",
+    scale: 35,
     rotation: [0, 0, 0],
   },
+   
   {
-    name: "GraphQL ",
-    modelPath: "",
-    scale: 1,
+    name: "CSS 3 ",
+    subtitle: "Advanced Level",
+    modelPath: "/models/moderncss.glb",
+    scale: 35,
     rotation: [0, 0, 0],
   },
+
   {
-    name: "Three Js",
-    modelPath: "",
-    scale: 1,
+    name: "Tailwind CSS ",
+    subtitle: "Basic Level",
+    modelPath: "/models/tailwind_css.glb",
+    scale: 35,
     rotation: [0, 0, 0],
   },
+  
   {
-    name: "Revit ",
-    modelPath: "",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "AutoCAD",
-    modelPath: "",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: " Tailwind CSS",
-    modelPath: "",
-    scale: 1,
-    rotation: [0, 0, 0],
+    name: "GitHub",
+    subtitle: "Intermediate Level",
+    modelPath: "/models/github.glb",
+    scale: 0.04,
+    rotation: [0, -0, 0],
   },
   {
     name: "Python ",
-    modelPath: "",
-    scale: 1,
-    rotation: [0, 0, 0],
+     subtitle: "Basic Level",
+    modelPath: "/models/python.glb",
+    scale: 35,
+    rotation:[0, 0, 0],
   },
-  {
-    name: "Gsap",
-    modelPath: "",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
+  
+  
   
 ];
 

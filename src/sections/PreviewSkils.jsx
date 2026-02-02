@@ -1,22 +1,28 @@
 
 
+
 import TitleHeader from '../components/TitleHeader'
 import { techStackIcons } from '../constants'
 import SkillsIcon from '../Models/TechLogos/SkillsIcon'
 
+
+
 const PreviewSkils = () => {
+   
+
   return (
     <>
     <div id='skills' className='flex-center section-padding scroll-mt-24' >
         <div className="w-full h-full md:px-10 px-5" >
             <TitleHeader 
             title="Mine  Language Skills"
-            sub=" 🤝 The Skills I Bring to the Table"
+            img="../images/mathematical.png"
+            sub="The Skills I Bring to the Table"
 
             />
         <div className='tech-grid'>
             {techStackIcons.map((icon) => (
-                <div key={icon.name} className='card-border tech-card overflow-hidden group xl:rounded-full rounded-lg'  >
+                <div key={icon.name} className='card-border tech-card overflow-hidden group rounded-lg'  >
                    
                         <div className='tech-card-content' >
                             <div className='tech-icon-wrapper' >
@@ -28,7 +34,7 @@ const PreviewSkils = () => {
 
                             <div className='padding-x w-full'>
                             <p>{icon.name}</p>
-                            <p>{icon.subtitle}</p>
+                            <p className='text-xs' >{icon.subtitle}</p>
                             </div>
                             
                         </div>
@@ -39,10 +45,11 @@ const PreviewSkils = () => {
         </div>    
 
         </div>
-
+        
     </div>
     </>
   )
 }
 
-export default PreviewSkils
+export default PreviewSkils;
+                        

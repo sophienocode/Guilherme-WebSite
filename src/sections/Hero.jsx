@@ -9,7 +9,7 @@ function Hero() {
     <>
       <section id="hero" className="relative overflow-hidden">
         <div className="absolute top-0 left-0 z-10">
-          <img src="/images/bg.png" alt="background" />
+         {/*  <img src="/images/bg.png" alt="background" />  */}
         </div>
 
         <div className="hero-layout">
@@ -48,7 +48,7 @@ function Hero() {
               <Button
                 className=" md:w-80 md:h-16 w-60 h-12"
                
-                text="See my Work !"
+                text="Download CV"
               />
             </div>
           </header>
