@@ -18,7 +18,7 @@ function Hero() {
             <div className="flex flex-col gap-7">
               <div className="hero-text">
                 <h1>
-                  Shaping
+                  Building
                   <span className="slide">
                     <span className="wrapper">
                       {words.map((word) => (
@@ -38,17 +38,17 @@ function Hero() {
                   </span>
                 </h1>
                 <h1>into Real Projects</h1>
-                <h1>that Deliver Results</h1>
+                <h1>that Drive Results</h1>
               </div>
-
+              
               <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                Wlc, I'm Sophie a passionate web developer dedicated to
-                transforming ideas!
+                Wlc, I'm Guilherme a begginer web developer dedicated to
+                transforming ideas into real, impactful projects!
               </p>
               <Button
                 className=" md:w-80 md:h-16 w-60 h-12"
-               
                 text="Download CV"
+                
               />
             </div>
           </header>
