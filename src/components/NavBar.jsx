@@ -25,17 +25,21 @@ const NavBar = () => {
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <a href="#hero" className="logo">
-         Sophie | NoCode
+         Dev | Gui
         </a>
 
         <nav className="desktop">
           <ul>
             {navLinks.map(({ link, name }) => (
               <li key={name}>
-             <a href={link} >
+            <a
+            href={link} 
+            target={link.startsWith("http") ? "_blank" : "_self"}
+            rel={link.startsWith("http") ? "noopener noreferrer" : undefined}
+             >
                   <span>{name}</span>
                  
-                </a>
+            </a>
             </li>
             ))}
           </ul>

@@ -3,8 +3,8 @@
 
 const navLinks = [
   {
-    name: "Work",
-    link: "#work",
+    name: "Projects",
+    link: "https://primary-server.vercel.app",
   },
   {
     name: "Dashboard",
@@ -14,10 +14,7 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+  
 ];
 
 const words = [
