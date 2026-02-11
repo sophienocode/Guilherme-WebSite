@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx';
 import NotFoundPage from './NotFoundPage.jsx';
 import Dashboard from './Dashboard.jsx';
-import NewPost from './NewPost.jsx';
+
 
 
 
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   {path: '/', element: <App /> }, 
   {path: '/dashboard', element: <Dashboard />},
   {path: '*', element: <NotFoundPage /> },
-  {path: '/newpost', element: <NewPost /> },
+  
 
 
 ]);
