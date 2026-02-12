@@ -1,53 +1,57 @@
-import * as THREE from 'three';
-import { RectAreaLight } from 'three';
-import { RectAreaLightUniformsLib } from 'three/examples/jsm/lights/RectAreaLightUniformsLib.js';
+import * as THREE from "three";
+import { useMemo } from "react";
 
 const RoomLights = () => {
+
+  const rectLight = useMemo(() => {
+    return new THREE.RectAreaLight("#a259ff", 3, 3, 2);
+  }, []);
+
   return (
     <>
-    
-    <spotLight
-      position={[2, 5, 6]}
-      angle={0.15}
-      penumbra={0.2}
-      intensity={100}
-      color="white"
-    />
-    {/* bluish overhead lamp */}
+      <spotLight
+        position={[2, 5, 6]}
+        angle={0.3}
+        penumbra={0.5}
+        intensity={2}
+        color="white"
+      />
 
-    <spotLight
-      position={[4, 5, 4]}
-      angle={0.3}
-      penumbra={0.5}
-      intensity={40}
-      color="#4cc9f0"
-    />
-    {/* purplish side fill */}
+      <spotLight
+        position={[4, 5, 4]}
+        angle={0.4}
+        penumbra={0.5}
+        intensity={1.5}
+        color="#4cc9f0"
+      />
 
-    <spotLight
-      position={[-3, 5, 5]}
-      angle={0.4}
-      penumbra={1}
-      intensity={60}
-      color="#9d4edd"
-    />
-    {/* area light for soft moody fill */}
+      <spotLight
+        position={[-3, 5, 5]}
+        angle={0.5}
+        penumbra={1}
+        intensity={2}
+        color="#9d4edd"
+      />
 
-    <primitive
-      object={new THREE.RectAreaLight("#a259ff", 8, 3, 2)}
-      position={[1, 3, 4]}
-      rotation={[-Math.PI / 4, Math.PI / 4, 0]}
-      intensity={15}
-    />
-    {/* subtle point light for atmospheric tone */}
+      <primitive
+        object={rectLight}
+        position={[1, 3, 4]}
+        rotation={[-Math.PI / 4, Math.PI / 4, 0]}
+      />
 
-    <pointLight position={[0, 1, 0]} intensity={10} color="#7209b7" />
-    <pointLight position={[1, 2, -2]} intensity={10} color="#0d00a4" />
+      <pointLight
+        position={[0, 1, 0]}
+        intensity={0.8}
+        color="#7209b7"
+      />
 
-
-
+      <pointLight
+        position={[1, 2, -2]}
+        intensity={0.6}
+        color="#0d00a4"
+      />
     </>
-  )
-}
+  );
+};
 
-export default RoomLights
+export default RoomLights;

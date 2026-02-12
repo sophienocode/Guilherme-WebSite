@@ -21,9 +21,9 @@ function Hero() {
                   Building
                   <span className="slide">
                     <span className="wrapper">
-                      {words.map((word) => (
+                      {words.map((word, index) => (
                         <span
-                          key={word.text}
+                          key={index}
                           className="flex items-center md:gap-3 gap-1 pb-2"
                         >
                           <img
@@ -42,8 +42,10 @@ function Hero() {
               </div>
               
               <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-                Wlc, I'm Guilherme a begginer web developer dedicated to
-                transforming ideas into real, impactful projects!
+                Wlc, I'm Guilherme a begginer 
+                web developer dedicated to
+                transforming ideas!
+                
               </p>
               <Button
                 className=" md:w-80 md:h-16 w-60 h-12"
