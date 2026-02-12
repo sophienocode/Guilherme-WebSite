@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useMemo, useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
@@ -14,42 +14,56 @@ export function Room(props) {
   const { nodes, materials } = useGLTF('/models/optimized-room.glb');
 
 
-  const curtainMaterial = new THREE.MeshPhongMaterial({ color: '#fff0db' });
+  const curtainMaterial = useMemo(
+  () => new THREE.MeshPhongMaterial({ color: "#fff0db" }),
+  []
+);
 
-  const bodyMaterial = new THREE.MeshPhongMaterial({ map: matcapTexture });
+  
+const bodyMaterial = useMemo(
+  () => new THREE.MeshPhongMaterial({ map: matcapTexture }),
+  [matcapTexture] // depende da textura
+);
 
-  const tableMaterial = new THREE.MeshPhongMaterial({
-    color: "#faf0e6",
-  });
+const tableMaterial = useMemo(
+  () => new THREE.MeshPhongMaterial({ color: "#faf0e6" }),
+  []
+);
 
-  const radiatorMaterial = new THREE.MeshPhongMaterial({
-    color: "#dddddd",
-  });
+const radiatorMaterial = useMemo(
+  () => new THREE.MeshPhongMaterial({ color: "#dddddd" }),
+  []
+);
 
-  const compMaterial = new THREE.MeshStandardMaterial({
-    color: "#dddddd",
-  });
+const compMaterial = useMemo(
+  () => new THREE.MeshStandardMaterial({ color: "#dddddd" }),
+  []
+);
 
-  const pillowMaterial = new THREE.MeshPhongMaterial({
-    color: "#8338ec",
-  });
+const pillowMaterial = useMemo(
+  () => new THREE.MeshPhongMaterial({ color: "#8338ec" }),
+  []
+);
 
-  const chairMaterial = new THREE.MeshPhongMaterial({
-    color: "#000",
-  });
+const chairMaterial = useMemo(
+  () => new THREE.MeshPhongMaterial({ color: "#000" }),
+  []
+);
 
 
 return (
     <group {...props} dispose={null}>
+      {/* 
       <EffectComposer>
         <SelectiveBloom
           selection={screensRef}
-          intensity={1.0} // Strength of the bloom
-          luminanceThreshold={0.2} // Minimum luminance needed
-          luminanceSmoothing={0.9} // Smooth transition
-          blendFunction={BlendFunction.ADD} // How it blends
+          intensity={1.0}
+          luminanceThreshold={0.2}
+          luminanceSmoothing={0.9}
+          blendFunction={BlendFunction.ADD}
         />
       </EffectComposer>
+*/}
       <mesh
         geometry={nodes._________6_blinn1_0.geometry}
         material={curtainMaterial}
