@@ -25,9 +25,6 @@ export default function Dashboard() {
 
 
         <h3>maybe a calendar?</h3>
-       <h4>Ola ola oal ola ola ola</h4>
-        <h1>helo world</h1>
-
         <h3>maybe a calendar?</h3>
        <h4>Ola ola oal ola ola ola</h4>
         <h1>helo world</h1>
@@ -36,11 +33,7 @@ export default function Dashboard() {
         <h1>helo world</h1>
 
         <h3>maybe a calendar?</h3>
-       <h4>Ola ola oal ola ola ola</h4>
-        <h1>helo world</h1><h3>maybe a calendar?</h3>
-       <h4>Ola ola oal ola ola ola</h4>
-        <h1>helo world</h1>
-        <h3>maybe a calendar?</h3>
+       
        <h4>Ola ola oal ola ola ola</h4>
         <h1>helo world</h1>
   
